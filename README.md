@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Project Setup](#project-setup)
-- [Developer Documentation](#developer-documentation)
+- [Developer Guide](#developer-guide)
 
 ### Project Overview
 
@@ -32,4 +32,4 @@ This project is the official website for The Kingdom Trybe, built using React.js
 
 ### Developer Guide
 
-[View Developer Documentation](https://www.notion.so/Frontend-Developer-Guide-30d9b3dc8ec780879866df5d55bf958e?source=copy_link)
+[View Developer Guide](https://www.notion.so/Frontend-Developer-Guide-30d9b3dc8ec780879866df5d55bf958e?source=copy_link)
