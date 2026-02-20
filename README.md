@@ -1,4 +1,4 @@
-# Calvary Bible Church Website
+# The Kingdom Trybe Website
 
 ## Table of Contents
 - [Project Overview](#project-overview)
