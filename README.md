@@ -30,6 +30,6 @@ This project is the official website for The Kingdom Trybe, built using React.js
   ```
 
 
-### Developer Documentation
+### Developer Guide
 
-[View Developer Documentation](https://www.notion.so/Developer-documentation-3049b3dc8ec780e1a2ecfd85c670c5d9?source=copy_link)
+[View Developer Documentation](https://www.notion.so/Frontend-Developer-Guide-30d9b3dc8ec780879866df5d55bf958e?source=copy_link)
