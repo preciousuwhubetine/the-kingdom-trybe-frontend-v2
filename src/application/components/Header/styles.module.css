@@ -1,0 +1,82 @@
+.Header {
+  border-bottom: 1px solid transparent;
+  position: fixed;
+  transition: background-color 0.5s ease-in, backdrop-filter 0.5s ease-in, border-bottom 0.5s ease-in;
+  width: 100%;
+  z-index: 100;
+}
+
+.HeaderFilled {
+  backdrop-filter: blur(10px);
+  background-color: #0a0a0aaa;
+  border-bottom: 1px solid #ffffff11;
+}
+
+.HeaderMain {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.HeaderLogo img {
+  height: 58px;
+  width: auto;
+}
+
+.HeaderMain nav ul {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.HeaderMain nav ul li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.HeaderMain nav ul li button {
+  background: none;
+  border: none;
+  color: white;
+  font-family: 'Things Digital';
+  height: 48px;
+  position: relative;
+  width: 125px;
+}
+
+.HeaderMain nav ul li button svg {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.HeaderMenuButton {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .HeaderLogo img {
+    height: 47px;
+  }
+
+  .HeaderMain nav ul {
+    display: none;
+  }
+
+  .HeaderMenuButton {
+    background: none;
+    border: none;
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .HeaderLogo img {
+    height: 40px;
+  }
+}

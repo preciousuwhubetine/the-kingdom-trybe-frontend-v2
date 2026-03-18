@@ -6,14 +6,25 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Things Digital";
+  src:
+    url("/fonts/things-digital.woff") format("woff");
+  font-weight: 400;
+}
+
 :root {
   --content-max-width: 1300px;
   --header-height: 100px;
+
+  --tablet-breakpoint: 768px;
 
   scroll-behavior: smooth;
 }
 
 body {
+  background-color: #0a0a0a;
+  color: white;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
@@ -40,11 +51,6 @@ button:focus {
   outline: none;
 }
 
-a:hover,
-button:hover {
-  scale: 1.01;
-}
-
 a:active,
 button:active {
   scale: 0.99;
@@ -61,6 +67,11 @@ textarea:focus {
 
 section {
   scroll-margin-top: 40px;
+}
+
+.container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
 }
 
 @keyframes rotate {
