@@ -59,6 +59,8 @@
 
 .FooterBottom {
   text-align: center;
+  font-size: 16px;
+  padding: 0 20px;
 }
 
 @media (max-width: 1024px) {
@@ -71,6 +73,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
+
+  .FooterTopLinks:nth-child(5) {
+    grid-row: 3;
+    grid-column: 1;
+  }
 }
 
 @media (max-width: 550px) {
@@ -79,6 +86,10 @@
   }
 
   .FooterTopLogo img {
-    width: 200px;
+    width: 250px;
+  }
+
+  .FooterBottom {
+    font-size: 14px;
   }
 }

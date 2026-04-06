@@ -1108,6 +1108,10 @@
   .HomepageSupport h2 {
     font-size: 20px;
   }
+
+  .HomepageSupportContent p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1177,6 +1181,14 @@
   .HomepageGrowHeaderSvgLeftMobile {
     transform: translate(-30px, -120px);
   }
+
+  .HomepageGrowHeaderSvgLeftMobile,
+  .HomepageGrowHeaderSvgRightMobile,
+  .HomepageChannelsLeftSvgLeft,
+  .HomepageChannelsLeftSvgRight {
+    display: none;
+  }
+
 }
 
 @media (max-width: 280px) {
