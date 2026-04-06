@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 import { Link } from 'react-router-dom'
+import HomepageBlogPost from '../../components/Homepage/BlogPost/BlogPost'
 
 function HomePage() {
   return (
@@ -16,8 +17,8 @@ function HomePage() {
               <span>See what's live</span>
 
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3.33331 8H12.6666" stroke="#51A2FF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 3.33301L12.6667 7.99967L8 12.6663" stroke="#51A2FF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.33331 8H12.6666" stroke="#51A2FF" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M8 3.33301L12.6667 7.99967L8 12.6663" stroke="#51A2FF" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </button>
 
@@ -35,8 +36,8 @@ function HomePage() {
                     <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
                     <defs>
                       <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -48,8 +49,8 @@ function HomePage() {
                     <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
                     <defs>
                       <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -73,11 +74,11 @@ function HomePage() {
               <h2>
                 <svg className={styles['HomepageGrowHeaderSvgLeftMobile']} xmlns="http://www.w3.org/2000/svg" width="367" height="351" viewBox="0 0 367 351" fill="none">
                   <g filter="url(#filter0_dddddd_518_12284)">
-                    <path d="M116.5 77H23.5V101" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M116.5 77H23.5V101" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_518_12284" x="-227.5" y="-174" width="594" height="525" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_518_12284" x="-227.5" y="-174" width="594" height="525" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="5.4375"/>
@@ -115,11 +116,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageGrowHeaderSvgLeft']} xmlns="http://www.w3.org/2000/svg" width="670" height="488" viewBox="0 0 670 488" fill="none">
                   <g filter="url(#filter0_dddddd_361_2271)">
-                    <path d="M419.719 207.142H187.719V237.458" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M419.719 207.142H187.719V237.458" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2271" x="-63.2812" y="-43.8584" width="733" height="531.316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2271" x="-63.2812" y="-43.8584" width="733" height="531.316" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="5.4375"/>
@@ -159,11 +160,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageGrowHeaderSvgRightMobile']} xmlns="http://www.w3.org/2000/svg" width="372" height="410" viewBox="0 0 372 410" fill="none">
                   <g filter="url(#filter0_dddddd_518_12285)">
-                    <path d="M250 159H343V135" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M250 159H343V135" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_518_12285" x="0" y="-115" width="594" height="525" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_518_12285" x="0" y="-115" width="594" height="525" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="3.85547"/>
@@ -201,11 +202,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageGrowHeaderSvgRight']} xmlns="http://www.w3.org/2000/svg" width="603" height="532" viewBox="0 0 603 532" fill="none">
                   <g filter="url(#filter0_dddddd_361_2270)">
-                    <path d="M250 280.316H414.5V250" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M250 280.316H414.5V250" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2270" x="0" y="0" width="665.5" height="531.316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2270" x="0" y="0" width="665.5" height="531.316" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="3.85547"/>
@@ -243,9 +244,9 @@ function HomePage() {
               </h2>
 
               <p>
-                <div>
+                <span>
                   TKT reimagines church for people who live on screens and in communities — not just on Sundays.
-                </div>
+                </span>
               </p>
             </div>
 
@@ -253,21 +254,21 @@ function HomePage() {
               <li>
                 <div>
                   <svg className={styles['HomepageGrowContentSvgDesktop']} xmlns="http://www.w3.org/2000/svg" width="398" height="107" viewBox="0 0 398 107" fill="none">
-                    <path d="M327.5 1H1V106H396.5V71L327.5 1Z" fill="#42E6A4" stroke="url(#paint0_linear_361_2280)" stroke-width="2"/>
+                    <path d="M327.5 1H1V106H396.5V71L327.5 1Z" fill="#42E6A4" stroke="url(#paint0_linear_361_2280)" strokeWidth="2"/>
                     <defs>
                       <linearGradient id="paint0_linear_361_2280" x1="1" y1="53.5" x2="396.5" y2="53.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
 
                   <svg className={styles['HomepageGrowContentSvgMobile']} xmlns="http://www.w3.org/2000/svg" width="352" height="56" viewBox="0 0 352 56" fill="none">
-                    <path d="M289.782 0.84375H0.843506V54.8438H350.844V36.8438L289.782 0.84375Z" fill="#42E6A4" stroke="url(#paint0_linear_518_12293)" stroke-width="1.68687"/>
+                    <path d="M289.782 0.84375H0.843506V54.8438H350.844V36.8438L289.782 0.84375Z" fill="#42E6A4" stroke="url(#paint0_linear_518_12293)" strokeWidth="1.68687"/>
                     <defs>
                       <linearGradient id="paint0_linear_518_12293" x1="0.843506" y1="27.8438" x2="350.844" y2="27.8438" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -277,7 +278,7 @@ function HomePage() {
 
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="170" height="148" viewBox="0 0 170 148" fill="none">
-                    <g clip-path="url(#clip0_361_2282)">
+                    <g clipPath="url(#clip0_361_2282)">
                       <path d="M23.7279 9.15244C19.0671 10.5648 14.6605 14.9149 13.5871 19.152C12.7396 22.5982 12.6831 122.34 13.5588 125.532C14.8017 130.164 19.632 134.599 24.7448 135.785C28.6712 136.689 147.508 136.463 150.219 135.531C153.327 134.458 155.841 132.678 157.79 130.192C161.123 125.871 161.038 127.198 160.869 70.7034L160.728 19.0673L159.202 16.4685C158.355 15.0279 156.745 13.0506 155.643 12.0902C151.491 8.44625 154.089 8.61574 104.318 8.75697L59.0371 8.86996L104.233 9.18069C154.146 9.4914 151.152 9.26543 155.558 13.1353C156.716 14.1522 158.214 16.1578 158.92 17.5984L160.163 20.1972L160.304 70.9859C160.502 128.187 160.643 125.786 156.406 130.39C155.163 131.746 152.96 133.441 151.491 134.147L148.864 135.446L89.5442 135.616C17.7959 135.814 20.1122 136.04 15.5361 127.763L13.8413 124.712V72.1723V19.6322L15.3384 17.0899C19.6038 9.88687 20.8184 9.51965 41.8062 9.15244L59.0371 8.86996L42.0886 8.78522C32.767 8.75697 24.4905 8.89821 23.7279 9.15244Z" fill="black"/>
                       <path d="M23.7279 9.15244C19.0671 10.5648 14.6605 14.9149 13.5871 19.152C12.7396 22.5982 12.6831 122.34 13.5588 125.532C14.8017 130.164 19.632 134.599 24.7448 135.785C28.6712 136.689 147.508 136.463 150.219 135.531C153.327 134.458 155.841 132.678 157.79 130.192C161.123 125.871 161.038 127.198 160.869 70.7034L160.728 19.0673L159.202 16.4685C158.355 15.0279 156.745 13.0506 155.643 12.0902C151.491 8.44625 154.089 8.61574 104.318 8.75697L59.0371 8.86996L104.233 9.18069C154.146 9.4914 151.152 9.26543 155.558 13.1353C156.716 14.1522 158.214 16.1578 158.92 17.5984L160.163 20.1972L160.304 70.9859C160.502 128.187 160.643 125.786 156.406 130.39C155.163 131.746 152.96 133.441 151.491 134.147L148.864 135.446L89.5442 135.616C17.7959 135.814 20.1122 136.04 15.5361 127.763L13.8413 124.712V72.1723V19.6322L15.3384 17.0899C19.6038 9.88687 20.8184 9.51965 41.8062 9.15244L59.0371 8.86996L42.0886 8.78522C32.767 8.75697 24.4905 8.89821 23.7279 9.15244Z" fill="url(#paint0_linear_361_2282)"/>
                       <path d="M67.5114 10.282C19.2367 10.6209 22.4851 10.3667 18.474 14.1801C14.5476 17.937 14.6888 15.875 14.6888 72.8499C14.6888 129.147 14.4629 125.701 18.361 129.994C22.7676 134.881 18.3892 134.599 87.1998 134.599C156.039 134.599 151.18 134.938 155.615 129.994C159.457 125.729 159.315 128.073 159.315 71.8895V20.7617L157.988 17.937C156.434 14.6321 153.44 11.7791 150.446 10.7904C147.847 9.97126 130.164 9.85827 67.5114 10.282ZM92.6515 13.135C92.2843 13.3609 91.4934 13.4457 90.9002 13.2762C90.307 13.135 89.8268 13.248 89.8268 13.5304C89.8268 13.8129 88.1037 13.9824 86.0134 13.9259C80.3639 13.7847 80.2227 13.7564 80.2227 13.1067C80.2227 12.7395 82.5672 12.5418 86.8043 12.5983C90.42 12.6548 93.047 12.8807 92.6515 13.135ZM106.577 13.4174C106.577 14.1236 105.165 14.1801 104.092 13.5022C103.696 13.248 103.386 13.3327 103.386 13.6717C103.386 14.5756 102.425 14.3778 102.03 13.3892C101.775 12.683 102.143 12.5418 104.148 12.6548C105.532 12.7113 106.577 13.0502 106.577 13.4174ZM148.412 17.9653C152.564 20.0273 153.242 21.3549 153.722 28.3885C154.118 34.2922 153.609 37.6537 152.79 34.4617C152.592 33.6143 152.197 33.0493 151.943 33.1906C151.689 33.3601 151.321 33.2188 151.124 32.9081C149.57 30.3941 150.954 30.4506 87.0021 30.5636C28.8408 30.6766 26.7505 30.7331 24.6037 31.7782C21.8637 33.1341 21.8072 33.0776 21.9202 29.01C22.0614 24.2927 23.0783 21.6092 25.3663 20.0838L27.2872 18.7844H69.291C96.4084 18.7844 111.295 18.5867 111.295 18.2195C111.295 16.9484 26.8352 17.7958 25.0839 19.0952C21.7224 21.6092 21.2422 22.8803 21.0162 29.4054C20.875 32.7386 20.536 35.7046 20.2536 36.0153C18.5305 37.7667 20.0276 22.8521 21.8072 20.677C25.2534 16.3552 21.8354 16.5811 87.3128 16.5529L145.531 16.5247L148.412 17.9653ZM149.174 32.6821C150.248 33.3036 151.689 34.6594 152.395 35.7046L153.666 37.5972V73.5278C153.666 114.317 153.892 112.227 149.118 114.684L146.66 115.955H87.0303C20.1971 115.927 24.0952 116.181 21.4682 111.888C19.7451 109.006 19.6886 38.7836 21.44 35.9023C24.18 31.4392 23.2195 31.4675 100.872 31.524C146.293 31.5522 147.254 31.5522 149.174 32.6821ZM18.7282 35.7328C18.6152 36.9757 18.2198 37.9926 17.8525 37.9926C17.4288 37.9926 17.2876 37.2017 17.4288 35.7328C17.5418 34.49 17.9373 33.4731 18.3045 33.4731C18.7282 33.4731 18.8694 34.264 18.7282 35.7328ZM56.1842 116.718C81.6916 116.859 86.6066 117.029 87.0303 117.678C87.454 118.356 86.7761 118.526 83.1887 118.667C77.3697 118.893 75.1382 121.04 77.7369 123.921C78.5561 124.853 78.5561 124.881 77.3415 124.571C76.3246 124.317 76.1551 124.43 76.4376 125.164C76.7483 126.011 74.7427 126.096 52.9923 126.096C28.5583 126.096 26.5527 126.011 26.5527 124.656C26.5527 124.232 26.3268 123.865 26.016 123.865C25.7336 123.865 24.8296 122.791 24.0387 121.464C23.2478 120.136 22.5699 119.317 22.5416 119.627C22.5134 119.938 22.2874 119.176 22.0332 117.933C21.3835 114.571 21.8072 114.035 24.0105 115.39C25.7901 116.492 26.8917 116.549 56.1842 116.718ZM151.152 119.684C150.672 120.164 150.135 121.181 149.937 121.916C149.739 122.678 149.344 123.3 149.062 123.3C148.751 123.3 148.666 123.554 148.864 123.865C149.062 124.175 148.723 124.43 148.101 124.43C147.48 124.43 146.886 124.74 146.745 125.136C146.576 125.672 141.293 125.842 122.961 125.842C96.8604 125.842 98.3293 126.068 98.301 122.085C98.301 119.825 97.5948 118.978 95.4763 118.695C94.7136 118.582 94.0639 118.159 94.0639 117.735C94.0639 117.085 98.64 116.887 120.899 116.69C145.361 116.436 147.903 116.323 149.711 115.39L151.689 114.373L151.858 116.577C151.971 118.017 151.717 119.091 151.152 119.684ZM96.8322 120.192C97.962 121.351 97.9903 122.396 96.8604 123.554C95.674 124.712 80.4487 124.853 78.8668 123.695C77.1155 122.424 77.9064 120.249 80.2227 119.882C85.4202 119.063 95.9 119.289 96.8322 120.192Z" fill="black"/>
@@ -305,52 +306,52 @@ function HomePage() {
                     </g>
                     <defs>
                       <linearGradient id="paint0_linear_361_2282" x1="12.9264" y1="72.529" x2="160.934" y2="72.529" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint1_linear_361_2282" x1="14.6864" y1="72.3221" x2="159.316" y2="72.3221" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint2_linear_361_2282" x1="112.999" y1="25.0602" x2="152.432" y2="25.0602" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint3_linear_361_2282" x1="21.4673" y1="73.6341" x2="152.537" y2="73.6341" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint4_linear_361_2282" x1="111.622" y1="47.4713" x2="144.452" y2="47.4713" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint5_linear_361_2282" x1="118.7" y1="47.4857" x2="123.274" y2="47.4857" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint6_linear_361_2282" x1="124.289" y1="47.638" x2="125.6" y2="47.638" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint7_linear_361_2282" x1="126.548" y1="47.3625" x2="132.763" y2="47.3625" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint8_linear_361_2282" x1="133.667" y1="47.4626" x2="138.532" y2="47.4626" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint9_linear_361_2282" x1="69.1284" y1="74.2358" x2="109.703" y2="74.2358" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint10_linear_361_2282" x1="75.1381" y1="74.7563" x2="103.95" y2="74.7563" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint11_linear_361_2282" x1="78.5831" y1="121.82" x2="96.3236" y2="121.82" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <clipPath id="clip0_361_2282">
                         <rect width="169.484" height="147.027" fill="white"/>
@@ -366,7 +367,7 @@ function HomePage() {
                     Watch now
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                      <path d="M0.5 6.33333L12.1667 6.33333M12.1667 6.33333L6.33333 12.1667M12.1667 6.33333L6.33333 0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M0.5 6.33333L12.1667 6.33333M12.1667 6.33333L6.33333 12.1667M12.1667 6.33333L6.33333 0.5" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </Link>
                 </div>
@@ -379,11 +380,11 @@ function HomePage() {
                   </svg>
 
                   <svg className={styles['HomepageGrowContentSvgMobile']} xmlns="http://www.w3.org/2000/svg" width="352" height="56" viewBox="0 0 352 56" fill="none">
-                    <path d="M289.782 0.84375H0.843506V54.8438H350.844V36.8438L289.782 0.84375Z" fill="#7A5CFF" stroke="url(#paint0_linear_518_12325)" stroke-width="1.68687"/>
+                    <path d="M289.782 0.84375H0.843506V54.8438H350.844V36.8438L289.782 0.84375Z" fill="#7A5CFF" stroke="url(#paint0_linear_518_12325)" strokeWidth="1.68687"/>
                     <defs>
                       <linearGradient id="paint0_linear_518_12325" x1="0.843506" y1="27.8438" x2="350.844" y2="27.8438" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -407,28 +408,28 @@ function HomePage() {
                     <path d="M113.792 66.8954C113.645 67.0725 113.497 71.4707 113.497 76.6954C113.497 87.5285 112.73 90.2442 108.479 94.3472C103.461 99.2177 103.786 99.1586 77.0422 99.3653L53.2802 99.5424V106.154C53.2802 113.977 54.0181 115.925 57.9145 118.641L60.453 120.441L85.3368 120.618L110.191 120.795L113.468 123.806C115.268 125.489 118.781 128.795 121.231 131.156C126.839 136.558 126.426 136.794 126.603 128.263L126.78 121.032L129.732 120.736C133.717 120.323 137.849 117.844 139.237 115.01C140.27 112.944 140.358 111.172 140.358 92.9303V73.1237L138.705 70.9393C136.049 67.4562 134.012 66.8954 123.386 66.7478C118.279 66.6592 113.969 66.7478 113.792 66.8954ZM134.632 69.9062C138.587 71.9725 138.558 71.7954 138.764 92.0743C139.001 116.043 138.499 117.548 129.998 118.345C124.832 118.818 124.655 119.054 124.743 125.754C124.802 128.677 124.802 131.333 124.773 131.629C124.743 131.924 121.555 129.09 117.718 125.282L110.722 118.375H85.7795C54.4904 118.375 55.0512 118.582 55.0512 106.627V101.254H77.4555C102.9 101.254 103.697 101.136 108.981 96.4725C114.028 92.0448 115.534 87.7942 115.681 77.6399C115.77 72.9466 115.829 69.0207 115.829 68.9321C115.947 68.0761 132.743 68.9321 134.632 69.9062Z" fill="url(#paint5_linear_361_2315)"/>
                     <defs>
                       <linearGradient id="paint0_linear_361_2315" x1="53.8749" y1="33.3806" x2="134.685" y2="33.3806" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint1_linear_361_2315" x1="57.4126" y1="33.2988" x2="131.208" y2="33.2988" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint2_linear_361_2315" x1="11.0693" y1="69.3593" x2="106.954" y2="69.3593" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint3_linear_361_2315" x1="14.3166" y1="69.1048" x2="103.491" y2="69.1048" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint4_linear_361_2315" x1="49.6202" y1="102.031" x2="143.818" y2="102.031" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint5_linear_361_2315" x1="53.2802" y1="100.847" x2="140.358" y2="100.847" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -441,7 +442,7 @@ function HomePage() {
                     Explore Trybes
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                      <path d="M0.5 6.33333L12.1667 6.33333M12.1667 6.33333L6.33333 12.1667M12.1667 6.33333L6.33333 0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M0.5 6.33333L12.1667 6.33333M12.1667 6.33333L6.33333 12.1667M12.1667 6.33333L6.33333 0.5" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </Link>
                 </div>
@@ -454,11 +455,11 @@ function HomePage() {
                   </svg>
 
                   <svg className={styles['HomepageGrowContentSvgMobile']} xmlns="http://www.w3.org/2000/svg" width="352" height="56" viewBox="0 0 352 56" fill="none">
-                    <path d="M289.782 0.84375H0.843506V54.8438H350.844V36.8438L289.782 0.84375Z" fill="#F9B640" stroke="url(#paint0_linear_518_12345)" stroke-width="1.68687"/>
+                    <path d="M289.782 0.84375H0.843506V54.8438H350.844V36.8438L289.782 0.84375Z" fill="#F9B640" stroke="url(#paint0_linear_518_12345)" strokeWidth="1.68687"/>
                     <defs>
                       <linearGradient id="paint0_linear_518_12345" x1="0.843506" y1="27.8438" x2="350.844" y2="27.8438" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -474,12 +475,12 @@ function HomePage() {
                     <path d="M63.2612 17.1502C51.3403 22.0868 47.1351 30.3509 47.2083 48.6345C47.2814 64.9069 48.6709 70.392 54.5948 78.1808C56.5695 80.7771 57.0448 82.0569 57.0448 84.8726V88.383L52.4739 89.8457C49.9508 90.6868 45.0874 92.1494 41.65 93.1368C26.3284 97.4882 18.8321 105.167 15.468 119.94C13.603 128.058 12.3232 136.688 12.8351 137.566C13.3471 138.37 134.531 138.443 135.847 137.639C137.127 136.798 135.847 124.036 133.799 117.381C129.594 103.705 121.878 97.0129 104.948 92.4785C90.7232 88.6756 91.8202 89.2606 91.5642 85.4211C91.3814 82.4957 91.8202 81.2159 94.709 76.2062C100.925 65.492 103.229 45.0875 99.5359 32.9838C95.2575 18.942 77.5956 11.1897 63.2612 17.1502ZM82.8247 18.2838C87.9441 19.8562 93.1001 23.7688 95.7695 28.0838C98.0732 31.8136 97.5612 32.1793 95.1844 28.486C89.2971 19.3442 77.9612 15.5778 65.8209 18.7591C64.8336 19.0151 64.2486 18.9785 64.5411 18.6494C66.3694 16.6382 76.8277 16.4188 82.8247 18.2838ZM61.4329 20.5509C56.3135 23.6226 53.0956 27.389 50.6456 33.2763L49.7314 35.4703L50.1336 33.2763C51.0112 28.486 59.7142 19.0151 63.1881 19.0151C63.6269 19.0151 62.859 19.7099 61.4329 20.5509ZM86.1889 21.9405C95.3672 26.8405 97.6344 31.9965 97.5978 47.9032C97.5612 62.1644 96.5374 66.5159 91.418 74.9263C83.9948 86.9935 85.7866 91.089 100.194 94.7823C123.231 100.743 132.995 111.676 133.105 131.459V134.567H74.9627L16.8209 134.531V131.386C16.8209 129.631 17.1135 127.254 17.4792 126.084C17.8083 124.914 18.503 122.135 19.015 119.94C22.0866 106.557 28.5224 100.852 46.6597 95.5868C60.5553 91.5278 60.9209 91.2353 60.5918 84.4338C60.3724 80.0457 60.0068 78.8756 58.2881 76.8278C48.6709 65.3823 47.062 36.3114 55.5821 27.2793C63.8829 18.4666 75.8038 16.3823 86.1889 21.9405ZM57.2277 77.6323C58.9097 79.7897 59.2389 80.9233 59.2389 84.6166C59.2389 90.3942 58.8 90.7233 46.4403 94.1972C27.9739 99.3532 22.3792 103.851 18.2105 116.979C17.4792 119.209 16.8941 120.526 16.8575 119.867C16.7844 117.929 19.4903 110.835 21.4284 107.8C25.7799 100.962 31.7038 97.4517 45.1971 93.7218C58.8 89.9188 58.5075 90.1017 58.5075 84.7994C58.5075 81.033 58.215 79.936 56.6426 78.0711C54.7777 75.8405 51.1575 69.295 51.2306 68.2345C51.2306 67.9054 52.1448 69.3315 53.2418 71.3427C54.3389 73.3905 56.1306 76.2427 57.2277 77.6323ZM90.906 89.9188C91.6739 90.9062 91.6374 90.9427 90.5038 90.0651C89.5165 89.2606 89.2605 88.0905 89.3702 84.9457L89.4799 80.8136L89.7724 84.7994C89.9187 87.03 90.4306 89.3338 90.906 89.9188ZM107.142 94.7823C109.921 95.6965 109.958 95.733 107.508 95.3308C106.118 95.0748 103.668 94.4532 102.022 93.9047C99.2433 92.9905 99.2068 92.9539 101.657 93.3562C103.046 93.6121 105.496 94.2338 107.142 94.7823ZM117.015 98.4024C121.476 100.633 126.522 105.204 128.57 108.861C130.801 112.846 130.106 112.773 127.766 108.788C125.389 104.802 120.379 100.67 114.602 97.9271C112.115 96.7203 110.908 95.989 111.896 96.245C112.919 96.5009 115.223 97.4882 117.015 98.4024ZM16.3821 125.718C16.1262 127.802 15.7239 129.338 15.5411 129.155C15.3583 128.973 15.4314 127.108 15.7239 125.06C16.0165 123.012 16.3821 121.44 16.565 121.623C16.7478 121.805 16.6747 123.67 16.3821 125.718ZM134.969 135.774C134.531 136.981 127.985 137.164 127.985 135.993C127.985 135.555 128.57 135.262 129.265 135.335C129.96 135.408 131.459 135.445 132.593 135.372L134.604 135.299L134.238 130.362L133.909 125.426L134.64 130.106C135.043 132.702 135.189 135.262 134.969 135.774ZM21.0627 135.372C24.1709 135.408 27.5351 135.408 28.5224 135.335C29.9851 135.262 30.1314 135.372 29.2538 135.993C28.1202 136.798 14.7732 136.908 14.3344 136.103C14.2247 135.884 14.2978 134.348 14.5538 132.739L14.9926 129.814L15.212 132.556L15.4314 135.299L21.0627 135.372ZM100.962 136.14C101.693 136.652 100.962 136.725 98.4389 136.469C96.5008 136.249 94.7456 135.957 94.5627 135.774C93.9045 135.116 99.9747 135.445 100.962 136.14ZM120.123 136.03C118.807 136.323 116.686 136.323 115.369 136.03C113.505 135.591 114.053 135.482 117.746 135.482C121.44 135.518 121.988 135.628 120.123 136.03Z" fill="url(#paint1_linear_361_2335)"/>
                     <defs>
                       <linearGradient id="paint0_linear_361_2335" x1="117.003" y1="76.3924" x2="205.142" y2="76.3924" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                       <linearGradient id="paint1_linear_361_2335" x1="12.7216" y1="76.6651" x2="136.359" y2="76.6651" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4"/>
-                        <stop offset="1" stop-color="#7A5CFF"/>
+                        <stop stopColor="#42E6A4"/>
+                        <stop offset="1" stopColor="#7A5CFF"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -492,7 +493,7 @@ function HomePage() {
                     Get support
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                      <path d="M0.5 6.33333L12.1667 6.33333M12.1667 6.33333L6.33333 12.1667M12.1667 6.33333L6.33333 0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M0.5 6.33333L12.1667 6.33333M12.1667 6.33333L6.33333 12.1667M12.1667 6.33333L6.33333 0.5" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </Link>
                 </div>
@@ -509,11 +510,11 @@ function HomePage() {
               <h2>
                 <svg className={styles['HomepageLiveHeaderSvgLeftDesktop']} xmlns="http://www.w3.org/2000/svg" width="670" height="488" viewBox="0 0 670 488" fill="none">
                   <g filter="url(#filter0_dddddd_361_2271)">
-                    <path d="M419.719 207.142H187.719V237.458" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M419.719 207.142H187.719V237.458" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2271" x="-63.2812" y="-43.8584" width="733" height="531.316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2271" x="-63.2812" y="-43.8584" width="733" height="531.316" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="5.4375"/>
@@ -551,11 +552,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageLiveHeaderSvgLeftMobile']} xmlns="http://www.w3.org/2000/svg" width="402" height="302" viewBox="0 0 402 302" fill="none">
                   <g filter="url(#filter0_dddddd_518_11873)">
-                    <path d="M163 32H93V52" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M163 32H93V52" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_518_11873" x="-158" y="-219" width="571" height="521" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_518_11873" x="-158" y="-219" width="571" height="521" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="5.4375"/>
@@ -596,11 +597,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageLiveHeaderSvgRightDesktop']} xmlns="http://www.w3.org/2000/svg" width="553" height="448" viewBox="0 0 553 448" fill="none">
                   <g filter="url(#filter0_dddddd_361_2350)">
-                    <path d="M250 196.562H301.978V166.246" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M250 196.562H301.978V166.246" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2350" x="0" y="-83.7539" width="552.978" height="531.316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2350" x="0" y="-83.7539" width="552.978" height="531.316" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="3.85547"/>
@@ -638,11 +639,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageLiveHeaderSvgRightMobile']} xmlns="http://www.w3.org/2000/svg" width="594" height="367" viewBox="0 0 594 367" fill="none">
                   <g filter="url(#filter0_dddddd_517_4187)">
-                    <path d="M250 116H343V92" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M250 116H343V92" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_517_4187" x="0" y="-158" width="594" height="525" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_517_4187" x="0" y="-158" width="594" height="525" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="3.85547"/>
@@ -692,7 +693,7 @@ function HomePage() {
 
                   <div className={styles['HomepageLiveVideoHeaderStatsViewers']}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_361_2361)">
+                      <g clipPath="url(#clip0_361_2361)">
                         <path d="M23.1853 11.6962C23.1525 11.6222 22.3584 9.86062 20.5931 8.09531C18.2409 5.74312 15.27 4.5 12 4.5C8.72999 4.5 5.75905 5.74312 3.40687 8.09531C1.64155 9.86062 0.843741 11.625 0.814679 11.6962C0.772035 11.7922 0.75 11.896 0.75 12.0009C0.75 12.1059 0.772035 12.2097 0.814679 12.3056C0.847491 12.3797 1.64155 14.1403 3.40687 15.9056C5.75905 18.2569 8.72999 19.5 12 19.5C15.27 19.5 18.2409 18.2569 20.5931 15.9056C22.3584 14.1403 23.1525 12.3797 23.1853 12.3056C23.2279 12.2097 23.25 12.1059 23.25 12.0009C23.25 11.896 23.2279 11.7922 23.1853 11.6962ZM12 18C9.11437 18 6.59343 16.9509 4.50655 14.8828C3.65028 14.0313 2.92179 13.0603 2.34374 12C2.92164 10.9396 3.65014 9.9686 4.50655 9.11719C6.59343 7.04906 9.11437 6 12 6C14.8856 6 17.4066 7.04906 19.4934 9.11719C20.3514 9.9684 21.0815 10.9394 21.6609 12C20.985 13.2619 18.0403 18 12 18ZM12 7.5C11.11 7.5 10.2399 7.76392 9.49993 8.25839C8.7599 8.75285 8.18313 9.45566 7.84253 10.2779C7.50194 11.1002 7.41282 12.005 7.58646 12.8779C7.76009 13.7508 8.18867 14.5526 8.81801 15.182C9.44735 15.8113 10.2492 16.2399 11.1221 16.4135C11.995 16.5872 12.8998 16.4981 13.7221 16.1575C14.5443 15.8169 15.2471 15.2401 15.7416 14.5001C16.2361 13.76 16.5 12.89 16.5 12C16.4988 10.8069 16.0242 9.66303 15.1806 8.81939C14.337 7.97575 13.1931 7.50124 12 7.5ZM12 15C11.4066 15 10.8266 14.8241 10.3333 14.4944C9.83993 14.1648 9.45542 13.6962 9.22835 13.1481C9.00129 12.5999 8.94188 11.9967 9.05764 11.4147C9.17339 10.8328 9.45911 10.2982 9.87867 9.87868C10.2982 9.45912 10.8328 9.1734 11.4147 9.05764C11.9967 8.94189 12.5999 9.0013 13.148 9.22836C13.6962 9.45542 14.1648 9.83994 14.4944 10.3333C14.824 10.8266 15 11.4067 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15Z" fill="white"/>
                       </g>
                       <defs>
@@ -716,8 +717,8 @@ function HomePage() {
                   <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
                   <defs>
                     <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#42E6A4"/>
-                      <stop offset="1" stop-color="#7A5CFF"/>
+                      <stop stopColor="#42E6A4"/>
+                      <stop offset="1" stopColor="#7A5CFF"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -729,8 +730,8 @@ function HomePage() {
                   <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
                   <defs>
                     <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#42E6A4"/>
-                      <stop offset="1" stop-color="#7A5CFF"/>
+                      <stop stopColor="#42E6A4"/>
+                      <stop offset="1" stopColor="#7A5CFF"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -751,8 +752,8 @@ function HomePage() {
                 <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
                 <defs>
                   <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#42E6A4"/>
-                    <stop offset="1" stop-color="#7A5CFF"/>
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -764,8 +765,8 @@ function HomePage() {
                 <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
                 <defs>
                   <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#42E6A4"/>
-                    <stop offset="1" stop-color="#7A5CFF"/>
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -789,11 +790,11 @@ function HomePage() {
               <h2>
                 <svg className={styles['HomepageChannelsLeftSvgLeft']} xmlns="http://www.w3.org/2000/svg" width="538" height="531" viewBox="0 0 538 531" fill="none">
                   <g filter="url(#filter0_dddddd_361_2418)">
-                    <path d="M288 251H100V281" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M288 251H100V281" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2418" x="-151" y="0" width="689" height="531" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2418" x="-151" y="0" width="689" height="531" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="5.4375"/>
@@ -833,11 +834,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageChannelsLeftSvgRight']} xmlns="http://www.w3.org/2000/svg" width="619" height="532" viewBox="0 0 619 532" fill="none">
                   <g filter="url(#filter0_dddddd_361_2417)">
-                    <path d="M250 281H367.692V250" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M250 281H367.692V250" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2417" x="0" y="0" width="618.692" height="532" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2417" x="0" y="0" width="618.692" height="532" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="3.85547"/>
@@ -881,7 +882,7 @@ function HomePage() {
               <ul>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_361_2422)">
+                    <g clipPath="url(#clip0_361_2422)">
                       <rect width="8" height="8" transform="translate(4.24268 9.90039) rotate(-45)"
                         fill="url(#paint0_linear_361_2422)" />
                     </g>
@@ -890,8 +891,8 @@ function HomePage() {
                     <defs>
                       <linearGradient id="paint0_linear_361_2422" x1="0" y1="4" x2="8" y2="4"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4" />
-                        <stop offset="1" stop-color="#7A5CFF" />
+                        <stop stopColor="#42E6A4" />
+                        <stop offset="1" stopColor="#7A5CFF" />
                       </linearGradient>
                       <clipPath id="clip0_361_2422">
                         <rect y="9.90039" width="14" height="14" transform="rotate(-45 0 9.90039)" fill="white" />
@@ -906,7 +907,7 @@ function HomePage() {
 
                 <li>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_361_2422)">
+                    <g clipPath="url(#clip0_361_2422)">
                       <rect width="8" height="8" transform="translate(4.24268 9.90039) rotate(-45)"
                         fill="url(#paint0_linear_361_2422)" />
                     </g>
@@ -915,8 +916,8 @@ function HomePage() {
                     <defs>
                       <linearGradient id="paint0_linear_361_2422" x1="0" y1="4" x2="8" y2="4"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4" />
-                        <stop offset="1" stop-color="#7A5CFF" />
+                        <stop stopColor="#42E6A4" />
+                        <stop offset="1" stopColor="#7A5CFF" />
                       </linearGradient>
                       <clipPath id="clip0_361_2422">
                         <rect y="9.90039" width="14" height="14" transform="rotate(-45 0 9.90039)" fill="white" />
@@ -931,7 +932,7 @@ function HomePage() {
 
                 <li>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_361_2422)">
+                    <g clipPath="url(#clip0_361_2422)">
                       <rect width="8" height="8" transform="translate(4.24268 9.90039) rotate(-45)"
                         fill="url(#paint0_linear_361_2422)" />
                     </g>
@@ -940,8 +941,8 @@ function HomePage() {
                     <defs>
                       <linearGradient id="paint0_linear_361_2422" x1="0" y1="4" x2="8" y2="4"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42E6A4" />
-                        <stop offset="1" stop-color="#7A5CFF" />
+                        <stop stopColor="#42E6A4" />
+                        <stop offset="1" stopColor="#7A5CFF" />
                       </linearGradient>
                       <clipPath id="clip0_361_2422">
                         <rect y="9.90039" width="14" height="14" transform="rotate(-45 0 9.90039)" fill="white" />
@@ -961,8 +962,8 @@ function HomePage() {
                   <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
                   <defs>
                     <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#42E6A4"/>
-                      <stop offset="1" stop-color="#7A5CFF"/>
+                      <stop stopColor="#42E6A4"/>
+                      <stop offset="1" stopColor="#7A5CFF"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -974,8 +975,8 @@ function HomePage() {
                   <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
                   <defs>
                     <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#42E6A4"/>
-                      <stop offset="1" stop-color="#7A5CFF"/>
+                      <stop stopColor="#42E6A4"/>
+                      <stop offset="1" stopColor="#7A5CFF"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -998,8 +999,8 @@ function HomePage() {
                 <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
                 <defs>
                   <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#42E6A4"/>
-                    <stop offset="1" stop-color="#7A5CFF"/>
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -1011,8 +1012,8 @@ function HomePage() {
                 <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
                 <defs>
                   <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#42E6A4"/>
-                    <stop offset="1" stop-color="#7A5CFF"/>
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -1030,11 +1031,11 @@ function HomePage() {
               <h2>
                 <svg className={styles['HomepageTestimoniesHeaderSvgLeftDesktop']} xmlns="http://www.w3.org/2000/svg" width="670" height="488" viewBox="0 0 670 488" fill="none">
                   <g filter="url(#filter0_dddddd_361_2271)">
-                    <path d="M419.719 207.142H187.719V237.458" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M419.719 207.142H187.719V237.458" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2271" x="-63.2812" y="-43.8584" width="733" height="531.316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2271" x="-63.2812" y="-43.8584" width="733" height="531.316" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="5.4375"/>
@@ -1072,11 +1073,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageTestimoniesHeaderSvgLeftMobile']} xmlns="http://www.w3.org/2000/svg" width="402" height="302" viewBox="0 0 402 302" fill="none">
                   <g filter="url(#filter0_dddddd_518_11873)">
-                    <path d="M163 32H93V52" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M163 32H93V52" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_518_11873" x="-158" y="-219" width="571" height="521" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_518_11873" x="-158" y="-219" width="571" height="521" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="5.4375"/>
@@ -1116,11 +1117,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageTestimoniesHeaderSvgRightDesktop']} xmlns="http://www.w3.org/2000/svg" width="553" height="448" viewBox="0 0 553 448" fill="none">
                   <g filter="url(#filter0_dddddd_361_2350)">
-                    <path d="M250 196.562H301.978V166.246" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M250 196.562H301.978V166.246" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_361_2350" x="0" y="-83.7539" width="552.978" height="531.316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_361_2350" x="0" y="-83.7539" width="552.978" height="531.316" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="3.85547"/>
@@ -1158,11 +1159,11 @@ function HomePage() {
 
                 <svg className={styles['HomepageTestimoniesHeaderSvgRightMobile']} xmlns="http://www.w3.org/2000/svg" width="594" height="367" viewBox="0 0 594 367" fill="none">
                   <g filter="url(#filter0_dddddd_517_4187)">
-                    <path d="M250 116H343V92" stroke="#F9B640" stroke-width="2"/>
+                    <path d="M250 116H343V92" stroke="#F9B640" strokeWidth="2"/>
                   </g>
                   <defs>
-                    <filter id="filter0_dddddd_517_4187" x="0" y="-158" width="594" height="525" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_dddddd_517_4187" x="0" y="-158" width="594" height="525" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                       <feOffset/>
                       <feGaussianBlur stdDeviation="3.85547"/>
@@ -1264,8 +1265,8 @@ function HomePage() {
                 <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
                 <defs>
                   <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#42E6A4"/>
-                    <stop offset="1" stop-color="#7A5CFF"/>
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -1277,14 +1278,341 @@ function HomePage() {
                 <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
                 <defs>
                   <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#42E6A4"/>
-                    <stop offset="1" stop-color="#7A5CFF"/>
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
                   </linearGradient>
                 </defs>
               </svg>
 
               Share Testimony
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles['HomepageCounselling']}>
+        <div className="container">
+          <div className={styles['HomepageCounsellingContent']}>
+            <div className={styles['HomepageCounsellingHeader']}>
+              <h2>
+                <svg className={styles['HomepageCounsellingHeaderSvgLeft']} xmlns="http://www.w3.org/2000/svg" width="538" height="531" viewBox="0 0 538 531" fill="none">
+                  <g filter="url(#filter0_dddddd_361_2418)">
+                    <path d="M288 251H100V281" stroke="#F9B640" strokeWidth="2"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_dddddd_361_2418" x="-151" y="0" width="689" height="531" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="5.4375"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="10.875"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect1_dropShadow_361_2418" result="effect2_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="38.0625"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect2_dropShadow_361_2418" result="effect3_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="76.125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect3_dropShadow_361_2418" result="effect4_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect4_dropShadow_361_2418" result="effect5_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect5_dropShadow_361_2418" result="effect6_dropShadow_361_2418"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_361_2418" result="shape"/>
+                    </filter>
+                  </defs>
+                </svg>
+
+                  TALK TO SOMEONE PRIVATELY.
+
+                <svg className={styles['HomepageCounsellingHeaderSvgRight']} xmlns="http://www.w3.org/2000/svg" width="619" height="532" viewBox="0 0 619 532" fill="none">
+                  <g filter="url(#filter0_dddddd_361_2417)">
+                    <path d="M250 281H367.692V250" stroke="#F9B640" strokeWidth="2"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_dddddd_361_2417" x="0" y="0" width="618.692" height="532" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="3.85547"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="7.71094"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect1_dropShadow_361_2417" result="effect2_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="26.9883"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect2_dropShadow_361_2417" result="effect3_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="53.9766"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect3_dropShadow_361_2417" result="effect4_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="92.5312"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect4_dropShadow_361_2417" result="effect5_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect5_dropShadow_361_2417" result="effect6_dropShadow_361_2417"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_361_2417" result="shape"/>
+                    </filter>
+                  </defs>
+                </svg>
+              </h2>
+
+              <p>
+                Anonymous sessions, support groups, and spiritual guidance — powered by secure video and AI intake, protected by NDPR/GDPR standards. Your story stays yours.
+              </p>
+
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="261" height="48" viewBox="0 0 261 48" fill="none">
+                  <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="#D9D9D9"/>
+                  <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#42E6A4"/>
+                      <stop offset="1" stopColor="#7A5CFF"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="271" height="56" viewBox="0 0 271 56" fill="none">
+                  <mask id="path-1-inside-1_361_2226" fill="white">
+                    <path d="M271 28.7646L234.944 56H0V27.6846L36.5303 0H271V28.7646Z"/>
+                  </mask>
+                  <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#42E6A4"/>
+                      <stop offset="1" stopColor="#7A5CFF"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                Request Counselling
+              </button>
+            </div>
+
+            <img alt="" src="/homepage-counselling-image.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <section className={styles['HomepageBlog']}>
+        <div className="container">
+          <div className={styles['HomepageBlogContent']}>
+            <div className={styles['HomepageBlogHeader']}>
+              <h2>
+                <svg className={styles['HomepageBlogHeaderSvgLeft']} xmlns="http://www.w3.org/2000/svg" width="538" height="531" viewBox="0 0 538 531" fill="none">
+                  <g filter="url(#filter0_dddddd_361_2418)">
+                    <path d="M288 251H100V281" stroke="#F9B640" strokeWidth="2"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_dddddd_361_2418" x="-151" y="0" width="689" height="531" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="5.4375"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="10.875"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect1_dropShadow_361_2418" result="effect2_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="38.0625"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect2_dropShadow_361_2418" result="effect3_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="76.125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect3_dropShadow_361_2418" result="effect4_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect4_dropShadow_361_2418" result="effect5_dropShadow_361_2418"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect5_dropShadow_361_2418" result="effect6_dropShadow_361_2418"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_361_2418" result="shape"/>
+                    </filter>
+                  </defs>
+                </svg>
+
+                FRESH FROM THE TRYBE
+
+                <svg className={styles['HomepageBlogHeaderSvgRight']} xmlns="http://www.w3.org/2000/svg" width="619" height="532" viewBox="0 0 619 532" fill="none">
+                  <g filter="url(#filter0_dddddd_361_2417)">
+                    <path d="M250 281H367.692V250" stroke="#F9B640" strokeWidth="2"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_dddddd_361_2417" x="0" y="0" width="618.692" height="532" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="3.85547"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="7.71094"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect1_dropShadow_361_2417" result="effect2_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="26.9883"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect2_dropShadow_361_2417" result="effect3_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="53.9766"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect3_dropShadow_361_2417" result="effect4_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="92.5312"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect4_dropShadow_361_2417" result="effect5_dropShadow_361_2417"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="125"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                      <feBlend mode="normal" in2="effect5_dropShadow_361_2417" result="effect6_dropShadow_361_2417"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_361_2417" result="shape"/>
+                    </filter>
+                  </defs>
+                </svg>
+              </h2>
+
+              <p>
+                Articles, hot takes, and devotionals that connect faith with digital culture — for people who live online.
+              </p>
+            </div>
+
+            <div className={styles['HomepageBlogPosts']}>
+              <HomepageBlogPost />
+
+              <div className={styles['HomepageBlogPostsMore']}>
+                <h3>More</h3>
+                <ul>
+                  <li>
+                    <img alt="" src="/blog-post-image-2.jpg" />
+                  </li>
+                  <li>
+                    <img alt="" src="/blog-post-image-3.jpg" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="261" height="48" viewBox="0 0 261 48" fill="none">
+                <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="#D9D9D9"/>
+                <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="271" height="56" viewBox="0 0 271 56" fill="none">
+                <mask id="path-1-inside-1_361_2226" fill="white">
+                  <path d="M271 28.7646L234.944 56H0V27.6846L36.5303 0H271V28.7646Z"/>
+                </mask>
+                <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              Go to Blog
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles['HomepageSupport']}>
+        <div className="container">
+          <h2>SUPPORT THE MISSION</h2>
+
+          <img src="/homepage-support-image.png" alt="" />
+
+          <div className={styles['HomepageSupportContent']}>
+            <p>Give to keep the streams, Trybes, and counselling rooms running. Or grab limited “FaithDrop” drops from the store. </p>
+
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="261" height="48" viewBox="0 0 261 48" fill="none">
+                <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="#D9D9D9"/>
+                <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_361_2222" x1="0" y1="24" x2="260.499" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="271" height="56" viewBox="0 0 271 56" fill="none">
+                <mask id="path-1-inside-1_361_2226" fill="white">
+                  <path d="M271 28.7646L234.944 56H0V27.6846L36.5303 0H271V28.7646Z"/>
+                </mask>
+                <path d="M271 28.7646L271.603 29.5626L272 29.2625V28.7646H271ZM234.944 56V57H235.28L235.547 56.7979L234.944 56ZM0 56H-1V57H0V56ZM0 27.6846L-0.603998 26.8876L-1 27.1877V27.6846H0ZM36.5303 0V-1H36.1942L35.9263 -0.796986L36.5303 0ZM271 0H272V-1H271V0ZM271 28.7646L270.397 27.9667L234.342 55.2021L234.944 56L235.547 56.7979L271.603 29.5626L271 28.7646ZM234.944 56V55H0V56V57H234.944V56ZM0 56H1V27.6846H0H-1V56H0ZM0 27.6846L0.603998 28.4816L37.1343 0.796986L36.5303 0L35.9263 -0.796986L-0.603998 26.8876L0 27.6846ZM36.5303 0V1H271V0V-1H36.5303V0ZM271 0H270V28.7646H271H272V0H271Z" fill="url(#paint0_linear_361_2226)" mask="url(#path-1-inside-1_361_2226)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_361_2226" x1="0" y1="28" x2="271" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#42E6A4"/>
+                    <stop offset="1" stopColor="#7A5CFF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              Give
+            </button>
+
+            <Link to="/">
+              Shop FaithDrop
+
+              <svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                    <path d="M2 1L8 5L2 9" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+                  </marker>
+                </defs>
+                <line x1="2" y1="6" x2="16" y2="6" stroke="white" strokeWidth="2" markerEnd="url(#a)"/>
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

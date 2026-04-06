@@ -83,11 +83,15 @@
 
 .HomepageHeroText button,
 .HomepageChannels button,
-.HomepageTestimoniesContent > button {
+.HomepageTestimoniesContent > button,
+.HomepageCounsellingHeader button,
+.HomepageBlog button,
+.HomepageSupportContent button {
   background: none;
   border: none;
   color: white;
   font-family: 'Things Digital';
+  font-size: 13px;
   height: 56px;
   position: relative;
   width: 280px;
@@ -95,7 +99,10 @@
 
 .HomepageHeroText button svg,
 .HomepageChannels button svg,
-.HomepageTestimoniesContent > button svg {
+.HomepageTestimoniesContent > button svg,
+.HomepageCounsellingHeader button svg,
+.HomepageBlog button svg,
+.HomepageSupportContent button svg {
   left: 50%;
   position: absolute;
   top: 50%;
@@ -171,7 +178,8 @@
   max-width: 1000px;
 }
 
-.HomepageGrowHeader p div {
+.HomepageGrowHeader p span {
+  display: block;
   max-width: 400px;
   text-align: right;
 }
@@ -544,6 +552,178 @@
   margin: 0 auto;
 }
 
+.HomepageCounselling {
+  overflow-x: clip;
+  padding: 120px 20px;
+}
+
+.HomepageCounsellingContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.HomepageCounsellingHeader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.HomepageCounsellingHeader h2 {
+  font-family: 'Things Digital', sans-serif;
+  font-size: 32px;
+  margin-bottom: 16px;
+  padding-left: 32px;
+  position: relative;
+}
+
+.HomepageCounsellingHeaderSvgLeft {
+  position: absolute;
+  top: 0;
+  transform: translate(-132px, -270px);
+  z-index: -1;
+}
+
+.HomepageCounsellingHeaderSvgRight {
+  bottom: 100%;
+  position: absolute;
+  right: 0%;
+  transform: translate(282px, 310px);
+  z-index: -1;
+}
+
+.HomepageCounsellingHeader p {
+  font-size: 16px;
+  max-width: 472px;
+  text-align: center;
+}
+
+.HomepageCounsellingContent img {
+  border-image: linear-gradient(to right, #42E6A4, #7A5CFF) 1;
+  border-style: solid;
+  border-width: 5px;
+  width: 100%;
+  max-width: 958px;
+}
+
+.HomepageBlog {
+  overflow-x: clip;
+  padding: 120px 20px;
+}
+
+.HomepageBlogContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.HomepageBlogHeader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.HomepageBlogHeader h2 {
+  font-family: 'Things Digital', sans-serif;
+  font-size: 32px;
+  margin-bottom: 16px;
+  padding-left: 32px;
+  position: relative;
+  text-align: center;
+}
+
+.HomepageBlogHeaderSvgLeft {
+  position: absolute;
+  top: 0;
+  transform: translate(-132px, -270px);
+  z-index: -1;
+}
+
+.HomepageBlogHeaderSvgRight {
+  bottom: 100%;
+  position: absolute;
+  right: 0%;
+  transform: translate(282px, 310px);
+  z-index: -1;
+}
+
+.HomepageBlogHeader p {
+  font-size: 16px;
+  max-width: 472px;
+  text-align: center;
+}
+
+.HomepageBlogPosts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  height: 500px;
+}
+
+.HomepageBlogPostsMore {
+  display: grid;
+  grid-template-rows: 32px 1fr;
+  gap: 20px;
+}
+
+.HomepageBlogPostsMore ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.HomepageBlogPostsMore ul li img {
+  width: 100%;
+  height: 209px;
+  object-fit: cover;
+}
+
+.HomepageSupport {
+  display: flex;
+  align-items: center;
+}
+
+.HomepageSupport h2 {
+  font-family: 'Things Digital', sans-serif;
+  font-size: 60px;
+  gap: 24px;
+  text-align: center;
+}
+
+.HomepageSupport img {
+  width: 100%;
+  max-width: 958px;
+  height: auto;
+  margin-top: -40px;
+}
+
+.HomepageSupportContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.HomepageSupportContent p {
+  font-size: 20px;
+  max-width: 584px;
+  text-align: center;
+}
+
+.HomepageSupportContent a {
+  align-items: center;
+  color: white;
+  display: flex;
+  gap: 8px;
+  text-decoration: underline;
+}
+
 @media (max-width: 1300px) {
   .HomepageGrowBg {
     height: auto;
@@ -568,7 +748,7 @@
     text-align: center;
   }
 
-  .HomepageGrowHeader p div {
+  .HomepageGrowHeader p span {
     max-width: 100%;
     text-align: center;
   }
@@ -592,6 +772,26 @@
   .HomepageGrowContent ul li:nth-child(3) {
     grid-column: span 2;
     padding: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .HomepageBlogPosts {
+    grid-template-columns: 1fr;
+    height: max-content;
+    gap: 40px;
+  }
+
+  .HomepageBlogPostsMore ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .HomepageSupport h2 {
+    font-size: 32px;
+  }
+
+  .HomepageSupport img {
+    margin-top: -20px;
   }
 }
 
@@ -699,6 +899,21 @@
     justify-content: center;
     width: 40px;
   }
+
+  .HomepageCounselling h2 {
+    font-size: 18px;
+    margin-bottom: 32px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .HomepageCounsellingHeaderSvgLeft {
+    transform: translate(-115px, -270px);
+  }
+
+  .HomepageCounsellingHeaderSvgRight {
+    transform: translate(270px, 290px);
+  }
 }
 
 @media (max-width: 850px) {
@@ -735,9 +950,11 @@
   }
 
   .HomepageLiveHeader h2,
-  .HomepageTestimoniesHeader h2 {
+  .HomepageTestimoniesHeader h2 ,
+  .HomepageBlogHeader h2{
     font-size: 24px;
     gap: 8px;
+    padding: 0;
   }
 
   .HomepageLiveHeader h2 div {
@@ -748,7 +965,9 @@
   .HomepageLiveHeaderSvgLeftDesktop,
   .HomepageLiveHeaderSvgRightDesktop,
   .HomepageTestimoniesHeaderSvgLeftDesktop,
-  .HomepageTestimoniesHeaderSvgRightDesktop {
+  .HomepageTestimoniesHeaderSvgRightDesktop,
+  .HomepageBlogHeaderSvgLeft,
+  .HomepageBlogHeaderSvgRight {
     display: none;
   }
 
@@ -832,6 +1051,12 @@
   }
 }
 
+@media (max-width: 750px) {
+  .HomepageBlogPostsMore ul {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 680px) {
   .HomepageGrowHeaderSvgLeft,
   .HomepageGrowHeaderSvgRight {
@@ -852,6 +1077,13 @@
   .HomepageGrowHeaderSvgRightMobile {
     transform: translate(160px, -150px);
   }
+
+  .HomepageGrow,
+  .HomepageLive,
+  .HomepageTestimoniesContent,
+  .HomepageCounselling {
+    padding: 60px 20px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -871,6 +1103,10 @@
 
   .HomepageGrowHeaderSvgRightMobile {
     transform: translate(80px, -150px);
+  }
+
+  .HomepageSupport h2 {
+    font-size: 20px;
   }
 }
 
@@ -918,6 +1154,12 @@
   .HomepageTestimonies ul li {
     gap: 24px;
     height: auto;
+  }
+
+
+  .HomepageCounsellingHeaderSvgLeft,
+  .HomepageCounsellingHeaderSvgRight {
+    display: none;
   }
 }
 
