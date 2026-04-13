@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
 
-function Header() {
+function Header({
+  hide = false
+}) {
   const location = useLocation();
   const header = useRef(null);
   const [filled, setFilled] = useState(false);
@@ -20,7 +22,7 @@ function Header() {
       window.addEventListener('scroll', handleScroll);
       setFilled(false);
     } else {
-      header.current.classList.add(styles['HeaderFilled']);
+      header.current?.classList.add(styles['HeaderFilled']);
       setFilled(true);
     }
 
@@ -28,6 +30,8 @@ function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [location.pathname])
+
+  if (hide) return null;
 
   return (
     <header ref={header} className={`${styles['Header']} ${filled ? styles['HeaderFilled'] : ''}`}>
@@ -58,33 +62,35 @@ function Header() {
                 <Link to="/">STORE</Link>
               </li>
               <li>
-                <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="135" height="56" viewBox="0 0 135 56" fill="none">
-                    <mask id="path-1-inside-1_361_2205" fill="white">
-                      <path d="M134.276 28.7617L116.409 56H0V27.6826L18.0986 0H134.276V28.7617Z"/>
-                    </mask>
-                    <path d="M134.276 28.7617L135.113 29.3102L135.276 29.0604V28.7617H134.276ZM116.409 56V57H116.949L117.245 56.5485L116.409 56ZM0 56H-1V57H0V56ZM0 27.6826L-0.836991 27.1354L-1 27.3847V27.6826H0ZM18.0986 0V-1H17.5577L17.2616 -0.547217L18.0986 0ZM134.276 0H135.276V-1H134.276V0ZM134.276 28.7617L133.44 28.2132L115.573 55.4515L116.409 56L117.245 56.5485L135.113 29.3102L134.276 28.7617ZM116.409 56V55H0V56V57H116.409V56ZM0 56H1V27.6826H0H-1V56H0ZM0 27.6826L0.836991 28.2298L18.9356 0.547217L18.0986 0L17.2616 -0.547217L-0.836991 27.1354L0 27.6826ZM18.0986 0V1H134.276V0V-1H18.0986V0ZM134.276 0H133.276V28.7617H134.276H135.276V0H134.276Z" fill="url(#paint0_linear_361_2205)" mask="url(#path-1-inside-1_361_2205)"/>
-                    <defs>
-                      <linearGradient id="paint0_linear_361_2205" x1="0" y1="28" x2="134.276" y2="28" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#42E6A4"/>
-                        <stop offset="1" stopColor="#7A5CFF"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
+                <Link to="/login">
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="56" viewBox="0 0 135 56" fill="none">
+                      <mask id="path-1-inside-1_361_2205" fill="white">
+                        <path d="M134.276 28.7617L116.409 56H0V27.6826L18.0986 0H134.276V28.7617Z"/>
+                      </mask>
+                      <path d="M134.276 28.7617L135.113 29.3102L135.276 29.0604V28.7617H134.276ZM116.409 56V57H116.949L117.245 56.5485L116.409 56ZM0 56H-1V57H0V56ZM0 27.6826L-0.836991 27.1354L-1 27.3847V27.6826H0ZM18.0986 0V-1H17.5577L17.2616 -0.547217L18.0986 0ZM134.276 0H135.276V-1H134.276V0ZM134.276 28.7617L133.44 28.2132L115.573 55.4515L116.409 56L117.245 56.5485L135.113 29.3102L134.276 28.7617ZM116.409 56V55H0V56V57H116.409V56ZM0 56H1V27.6826H0H-1V56H0ZM0 27.6826L0.836991 28.2298L18.9356 0.547217L18.0986 0L17.2616 -0.547217L-0.836991 27.1354L0 27.6826ZM18.0986 0V1H134.276V0V-1H18.0986V0ZM134.276 0H133.276V28.7617H134.276H135.276V0H134.276Z" fill="url(#paint0_linear_361_2205)" mask="url(#path-1-inside-1_361_2205)"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_361_2205" x1="0" y1="28" x2="134.276" y2="28" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#42E6A4"/>
+                          <stop offset="1" stopColor="#7A5CFF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="125" height="48" viewBox="0 0 125 48" fill="none">
-                    <path d="M124.896 23.2959L108.743 48H0V24.5215L16.0352 0H124.896V23.2959Z" fill="#D9D9D9"/>
-                    <path d="M124.896 23.2959L108.743 48H0V24.5215L16.0352 0H124.896V23.2959Z" fill="url(#paint0_linear_361_2201)"/>
-                    <defs>
-                      <linearGradient id="paint0_linear_361_2201" x1="0" y1="24" x2="124.896" y2="24" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#42E6A4"/>
-                        <stop offset="1" stopColor="#7A5CFF"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="125" height="48" viewBox="0 0 125 48" fill="none">
+                      <path d="M124.896 23.2959L108.743 48H0V24.5215L16.0352 0H124.896V23.2959Z" fill="#D9D9D9"/>
+                      <path d="M124.896 23.2959L108.743 48H0V24.5215L16.0352 0H124.896V23.2959Z" fill="url(#paint0_linear_361_2201)"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_361_2201" x1="0" y1="24" x2="124.896" y2="24" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#42E6A4"/>
+                          <stop offset="1" stopColor="#7A5CFF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
 
-                  SIGN IN
-                </button>
+                    SIGN IN
+                  </button>
+                </Link>
               </li>
             </ul>
           </nav>

@@ -1,0 +1,288 @@
+.LoginPage {
+  background-image: url('/sign-in-page-bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  padding: 80px 20px;
+  overflow-x: clip;
+  overflow-y: auto;
+}
+
+.LoginPageMain {
+  align-items: center;
+  background-color: #0a0a0ade;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 16px #0a0a0ade;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 40px;
+  position: relative;
+}
+
+.LoginPageLogo {
+  width: 270px;
+}
+
+.LoginPageMain hr {
+  border: 1px solid #414141;
+  width: 100%;
+}
+
+.LoginPageForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.LoginPageFormHeader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.LoginPageForm h2 {
+  color: #fff;
+  font-family: 'Things Digital', sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+.LoginPageForm p {
+  text-align: center;
+}
+
+.LoginPageButton {
+  align-items: center;
+  background-color: #272727;
+  border: none;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  gap: 8px;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+}
+
+.LoginPageOr {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.LoginPageOr div {
+  border: 1px solid #414141;
+  flex: 1;
+}
+
+.LoginPageFormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.LoginPageFormGroup label {
+  color: #fff;
+  font-size: 14px;
+}
+
+.LoginPageFormGroup input {
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+  padding: 12px;
+}
+
+.LoginPageFormGroup input::placeholder {
+  color: #808080;
+}
+
+.LoginPageReveal {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.LoginPageFormRemember {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LoginPageFormRemember label {
+  align-items: center;
+  display: flex;
+}
+
+.LoginPageFormRememberCheckbox {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-size: 22px;
+  height: 20px;
+  user-select: none;
+}
+
+.LoginPageFormRememberCheckbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.LoginPageFormRememberCheckboxIndicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.LoginPageFormRememberCheckbox:hover input[type="checkbox"] ~ .LoginPageFormRememberCheckboxIndicator {
+  background-color: #ccc;
+}
+
+.LoginPageFormRememberCheckbox input[type="checkbox"]:checked ~ .LoginPageFormRememberCheckboxIndicator {
+  background-color: #17B26A;
+}
+
+.LoginPageFormRememberCheckboxIndicator::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.LoginPageFormRememberCheckbox input[type="checkbox"]:checked ~ .LoginPageFormRememberCheckboxIndicator::after {
+  display: block;
+}
+
+.LoginPageFormRememberCheckboxIndicator::after {
+  left: 7px;
+  top: 3px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.LoginPageForgot {
+  color: #fff;
+  font-size: 14px;
+  text-align: right;
+}
+
+.LoginPage button[type="submit"] {
+  background: none;
+  border: none;
+  color: white;
+  font-family: 'Things Digital';
+  font-size: 16px;
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.LoginPage button[type="submit"] svg {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.LoginPage button[type="submit"] span {
+  position: relative;
+  z-index: 1;
+}
+
+.LoginPageRegister {
+  text-align: center;
+}
+
+.LoginPageRegister a {
+  color: #f9b640;
+}
+
+.LoginPageTriangle {
+  bottom: 12px;
+  left: 12px;
+  position: absolute;
+}
+
+.LoginPageGamepad {
+  top: -80px;
+  left: 0;
+  position: absolute;
+  transform: translateX(-50%) rotate(-30deg);
+  width: 200px;
+}
+
+.LoginPageHeadphones {
+  right: 0;
+  bottom: -150px;
+  position: absolute;
+  transform: translateX(50%) rotate(30deg);
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .LoginPage {
+    background-image: none;
+    padding: 0;
+  }
+
+  .LoginPageMain {
+    border: none;
+    box-shadow: none;
+    max-width: none;
+    padding: 20px 20px 80px;
+  }
+
+  .LoginPageLogo {
+    width: 186px;
+  }
+
+  .LoginPageFormHeader h2 {
+    font-size: 18px;
+  }
+
+  .LoginPageFormHeader p {
+    font-size: 14px;
+  }
+
+  .LoginPage button[type="submit"] {
+    height: 80px;
+  }
+
+  .LoginPage button[type="submit"] svg {
+    width: 60%;
+  }
+
+  .LoginPageHeadphones,
+  .LoginPageGamepad {
+    display: none;
+  }
+
+  .LoginPageTriangle {
+    bottom: 0;
+    left: 0;
+  }
+}

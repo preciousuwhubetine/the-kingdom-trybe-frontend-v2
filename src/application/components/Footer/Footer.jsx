@@ -1,6 +1,10 @@
 import styles from './styles.module.css'
 
-function Footer() {
+function Footer({
+  hide = false
+}) {
+  if (hide) return null;
+
   return (
     <footer className={styles['Footer']}>
       <div className="container">

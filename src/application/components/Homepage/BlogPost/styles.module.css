@@ -86,7 +86,7 @@
     top: 0;
   }
 
-  .BlogPostContent svg {
+  .BlogPostContent > svg {
     display: none;
   }
 

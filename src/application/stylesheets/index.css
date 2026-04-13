@@ -44,6 +44,7 @@ h1 {
 
 a,
 button {
+  cursor: pointer;
   transition: scale 0.2s ease-in-out;
 }
 

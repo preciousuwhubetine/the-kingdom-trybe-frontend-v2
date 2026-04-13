@@ -2,7 +2,11 @@ import { useEffect, useState } from "react"
 import { Route, Routes, useLocation } from "react-router-dom"
 import { useSelector } from "react-redux"
 
+import Header from "../application/components/Header/Header.jsx"
+import Footer from "../application/components/Footer/Footer.jsx"
+
 import HomePage from "../application/views/HomePage/HomePage.jsx"
+import LoginPage from "../application/views/LoginPage/LoginPage.jsx";
 
 export default function Config () {
   const location = useLocation();
@@ -14,17 +18,29 @@ export default function Config () {
   }, [location.pathname]);
 
   return (
-    <Routes>
-      {
-        // session.active && (
-        //   <>
-        //     <Route path="/register" element={<Navigate to={redirectURL} />} />
-        //     <Route path="/login" element={<Navigate to={redirectURL} />} />
-        //   </>
-        // )
-      }
+    <>
+      <Header
+        hide={location.pathname === '/login' || location.pathname === '/register'}
+      />
 
-      <Route path="*" element={<HomePage />} />
-    </Routes>
+      <Routes>
+        {
+          // session.active && (
+          //   <>
+          //     <Route path="/register" element={<Navigate to={redirectURL} />} />
+          //     <Route path="/login" element={<Navigate to={redirectURL} />} />
+          //   </>
+          // )
+        }
+
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+
+      <Footer
+        hide={location.pathname === '/login' || location.pathname === '/register'}
+      />
+    </>
+
   )
 }
