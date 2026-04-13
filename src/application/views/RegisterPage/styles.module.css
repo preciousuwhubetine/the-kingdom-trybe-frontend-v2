@@ -1,5 +1,5 @@
-.LoginPage {
-  background-image: url('/sign-in-page-bg.jpg');
+.RegisterPage {
+  background-image: url('/register-page-bg.jpg');
   background-size: cover;
   height: 100vh;
   padding: 80px 20px;
@@ -7,7 +7,7 @@
   overflow-y: auto;
 }
 
-.LoginPageMain {
+.RegisterPageMain {
   align-items: center;
   background-color: #0a0a0ade;
   border: 1px solid #fff;
@@ -21,41 +21,41 @@
   position: relative;
 }
 
-.LoginPageLogo {
+.RegisterPageLogo {
   width: 270px;
 }
 
-.LoginPageMain hr {
+.RegisterPageMain hr {
   border: 1px solid #414141;
   width: 100%;
 }
 
-.LoginPageForm {
+.RegisterPageForm {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
 }
 
-.LoginPageFormHeader {
+.RegisterPageFormHeader {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.LoginPageForm h2 {
+.RegisterPageForm h2 {
   color: #fff;
   font-family: 'Things Digital', sans-serif;
   font-size: 28px;
   text-align: center;
 }
 
-.LoginPageForm p {
+.RegisterPageForm p {
   text-align: center;
 }
 
-.LoginPageButton {
+.RegisterPageButton {
   align-items: center;
   background-color: #272727;
   border: none;
@@ -68,42 +68,42 @@
   width: 100%;
 }
 
-.LoginPageOr {
+.RegisterPageOr {
   align-items: center;
   display: flex;
   gap: 16px;
   width: 100%;
 }
 
-.LoginPageOr div {
+.RegisterPageOr div {
   border: 1px solid #414141;
   flex: 1;
 }
 
-.LoginPageFormGroup {
+.RegisterPageFormGroup {
   display: flex;
   flex-direction: column;
   gap: 8px;
   position: relative;
 }
 
-.LoginPageFormGroup label {
+.RegisterPageFormGroup label {
   color: #fff;
   font-size: 14px;
 }
 
-.LoginPageFormGroup input {
+.RegisterPageFormGroup input {
   background: transparent;
   border: 1px solid white;
   color: #fff;
   padding: 12px;
 }
 
-.LoginPageFormGroup input::placeholder {
+.RegisterPageFormGroup input::placeholder {
   color: #808080;
 }
 
-.LoginPageReveal {
+.RegisterPageReveal {
   background: transparent;
   border: none;
   color: #fff;
@@ -115,18 +115,18 @@
   transform: translateY(-50%);
 }
 
-.LoginPageFormRemember {
+.RegisterPageFormRemember {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.LoginPageFormRemember label {
+.RegisterPageFormRemember label {
   align-items: center;
   display: flex;
 }
 
-.LoginPageFormRememberCheckbox {
+.RegisterPageFormRememberCheckbox {
   display: block;
   position: relative;
   padding-left: 28px;
@@ -136,7 +136,7 @@
   user-select: none;
 }
 
-.LoginPageFormRememberCheckbox input[type="checkbox"] {
+.RegisterPageFormRememberCheckbox input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -144,7 +144,7 @@
   width: 0;
 }
 
-.LoginPageFormRememberCheckboxIndicator {
+.RegisterPageFormRememberCheckboxIndicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -154,25 +154,25 @@
   background-color: #eee;
 }
 
-.LoginPageFormRememberCheckbox:hover input[type="checkbox"] ~ .LoginPageFormRememberCheckboxIndicator {
+.RegisterPageFormRememberCheckbox:hover input[type="checkbox"] ~ .RegisterPageFormRememberCheckboxIndicator {
   background-color: #ccc;
 }
 
-.LoginPageFormRememberCheckbox input[type="checkbox"]:checked ~ .LoginPageFormRememberCheckboxIndicator {
+.RegisterPageFormRememberCheckbox input[type="checkbox"]:checked ~ .RegisterPageFormRememberCheckboxIndicator {
   background-color: #17B26A;
 }
 
-.LoginPageFormRememberCheckboxIndicator::after {
+.RegisterPageFormRememberCheckboxIndicator::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.LoginPageFormRememberCheckbox input[type="checkbox"]:checked ~ .LoginPageFormRememberCheckboxIndicator::after {
+.RegisterPageFormRememberCheckbox input[type="checkbox"]:checked ~ .RegisterPageFormRememberCheckboxIndicator::after {
   display: block;
 }
 
-.LoginPageFormRememberCheckboxIndicator::after {
+.RegisterPageFormRememberCheckboxIndicator::after {
   left: 7px;
   top: 3px;
   width: 4px;
@@ -182,13 +182,13 @@
   transform: rotate(45deg);
 }
 
-.LoginPageForgot {
+.RegisterPageForgot {
   color: #fff;
   font-size: 14px;
   text-align: right;
 }
 
-.LoginPage button[type="submit"] {
+.RegisterPage button[type="submit"] {
   background: none;
   border: none;
   color: white;
@@ -199,7 +199,7 @@
   width: 100%;
 }
 
-.LoginPage button[type="submit"] svg {
+.RegisterPage button[type="submit"] svg {
   height: auto;
   left: 50%;
   position: absolute;
@@ -208,26 +208,31 @@
   width: 80%;
 }
 
-.LoginPage button[type="submit"] span {
+.RegisterPage button[type="submit"] span {
   position: relative;
   z-index: 1;
 }
 
-.LoginPageRegister {
+.RegisterPageRegister {
   text-align: center;
 }
 
-.LoginPageRegister a {
+.RegisterPageRegister a {
   color: #f9b640;
 }
 
-.LoginPageTriangle {
+.RegisterPageTerms {
+  color: #f9b640;
+  text-decoration: underline;
+}
+
+.RegisterPageTriangle {
   bottom: 12px;
   left: 12px;
   position: absolute;
 }
 
-.LoginPageGamepad {
+.RegisterPageGamepad {
   top: -80px;
   left: 0;
   position: absolute;
@@ -235,7 +240,7 @@
   width: 200px;
 }
 
-.LoginPageHeadphones {
+.RegisterPageHeadphones {
   right: 0;
   bottom: -150px;
   position: absolute;
@@ -244,12 +249,12 @@
 }
 
 @media (max-width: 600px) {
-  .LoginPage {
+  .RegisterPage {
     background-image: none;
     padding: 0;
   }
 
-  .LoginPageMain {
+  .RegisterPageMain {
     border: none;
     box-shadow: none;
     gap: 20px;
@@ -257,33 +262,33 @@
     padding: 40px 20px 80px;
   }
 
-  .LoginPageLogo {
+  .RegisterPageLogo {
     width: 186px;
   }
 
-  .LoginPageFormHeader h2 {
+  .RegisterPageFormHeader h2 {
     font-size: 18px;
   }
 
-  .LoginPageFormHeader p {
+  .RegisterPageFormHeader p {
     font-size: 14px;
   }
 
-  .LoginPage button[type="submit"] {
+  .RegisterPage button[type="submit"] {
     font-size: 12px;
     height: 80px;
   }
 
-  .LoginPage button[type="submit"] svg {
+  .RegisterPage button[type="submit"] svg {
     width: 60%;
   }
 
-  .LoginPageHeadphones,
-  .LoginPageGamepad {
+  .RegisterPageHeadphones,
+  .RegisterPageGamepad {
     display: none;
   }
 
-  .LoginPageTriangle {
+  .RegisterPageTriangle {
     bottom: 0;
     left: 0;
   }

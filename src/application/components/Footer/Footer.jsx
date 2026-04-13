@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './styles.module.css'
 
 function Footer({
@@ -21,47 +22,47 @@ function Footer({
             <div className={styles['FooterTopLinks']}>
               <h3>Platform</h3>
               <ul>
-                <li><a href="/">Watch</a></li>
-                <li><a href="/">Commuunity</a></li>
-                <li><a href="/">Counselling</a></li>
-                <li><a href="/">Team</a></li>
+                <li><Link to="/">Watch</Link></li>
+                <li><Link to="/">Commuunity</Link></li>
+                <li><Link to="/">Counselling</Link></li>
+                <li><Link to="/">Team</Link></li>
               </ul>
             </div>
 
             <div className={styles['FooterTopLinks']}>
               <h3>Resources</h3>
               <ul>
-                <li><a href="/">Blog</a></li>
-                <li><a href="/">Events</a></li>
-                <li><a href="/">Past Sermons</a></li>
-                <li><a href="/">Daily Devotion</a></li>
+                <li><Link to="/">Blog</Link></li>
+                <li><Link to="/">Events</Link></li>
+                <li><Link to="/past-sermons">Past Sermons</Link></li>
+                <li><Link to="/">Daily Devotion</Link></li>
               </ul>
             </div>
 
             <div className={styles['FooterTopLinks']}>
               <h3>Participate</h3>
               <ul>
-                <li><a href="/">Give</a></li>
-                <li><a href="/">Merch</a></li>
-                <li><a href="/">Share Testimony</a></li>
+                <li><Link to="/">Give</Link></li>
+                <li><Link to="/">Merch</Link></li>
+                <li><Link to="/">Share Testimony</Link></li>
               </ul>
             </div>
 
             <div className={styles['FooterTopLinks']}>
               <h3>Socials</h3>
               <ul>
-                <li><a href="/">Instagram</a></li>
-                <li><a href="/">Facebook</a></li>
-                <li><a href="/">Tik Tok</a></li>
-                <li><a href="/">YouTube</a></li>
+                <li><Link to="/">Instagram</Link></li>
+                <li><Link to="/">Facebook</Link></li>
+                <li><Link to="/">Tik Tok</Link></li>
+                <li><Link to="/">YouTube</Link></li>
               </ul>
             </div>
 
             <div className={styles['FooterTopLinks']}>
               <h3>Legal</h3>
               <ul>
-                <li><a href="/">Privacy Policy</a></li>
-                <li><a href="/">Terms of Use</a></li>
+                <li><Link to="/">Privacy Policy</Link></li>
+                <li><Link to="/">Terms of Use</Link></li>
               </ul>
             </div>
           </div>

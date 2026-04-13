@@ -1,22 +1,22 @@
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 
-function LoginPage() {
+function RegisterPage() {
   return (
-    <div className={styles['LoginPage']}>
-      <div className={styles['LoginPageMain']}>
+    <div className={styles['RegisterPage']}>
+      <div className={styles['RegisterPageMain']}>
         <Link to="/">
-          <img src="/logo.png" alt="Logo" className={styles['LoginPageLogo']} />
+          <img src="/logo.png" alt="Logo" className={styles['RegisterPageLogo']} />
         </Link>
 
         <hr />
 
-        <form className={styles['LoginPageForm']}>
-          <div className={styles['LoginPageFormHeader']}>
-            <h2>WELCOME BACK</h2>
-            <p>Sign in with your password.</p>
+        <form className={styles['RegisterPageForm']}>
+          <div className={styles['RegisterPageFormHeader']}>
+            <h2>JOIN THE TRYBE</h2>
+            <p>Pick a handle. The rest is easy.</p>
           </div>
-          <button type="button" className={styles['LoginPageButton']}>
+          <button type="button" className={styles['RegisterPageButton']}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_361_3005)">
                 <path fillRule="evenodd" clipRule="evenodd" d="M19.6 10.2271C19.6 9.518 19.5364 8.83619 19.4182 8.18164H10V12.0498H15.3818C15.15 13.2998 14.4455 14.3589 13.3864 15.068V17.5771H16.6182C18.5091 15.8362 19.6 13.2725 19.6 10.2271Z" fill="#4285F4"/>
@@ -33,20 +33,20 @@ function LoginPage() {
 
             Continue with Google
           </button>
-          <div className={styles['LoginPageOr']}>
+          <div className={styles['RegisterPageOr']}>
             <div />
             <span>OR</span>
             <div />
           </div>
-          <div className={styles['LoginPageFormGroup']}>
+          <div className={styles['RegisterPageFormGroup']}>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" />
           </div>
-          <div className={styles['LoginPageFormGroup']}>
+          <div className={styles['RegisterPageFormGroup']}>
             <label htmlFor="password">Password</label>
-            <div className={styles['LoginPageFormGroup']}>
+            <div className={styles['RegisterPageFormGroup']}>
               <input type="password" id="password" name="password" placeholder="Enter your password" />
-              <button type="button" className={styles['LoginPageReveal']}>
+              <button type="button" className={styles['RegisterPageReveal']}>
                 <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.2177 4.2463C13.3835 4.45302 13.4753 4.72159 13.4753 5.00006C13.4753 5.27853 13.3835 5.5471 13.2177 5.75382C12.1677 7.02509 9.77764 9.5001 6.98764 9.5001C4.19764 9.5001 1.80764 7.02509 0.757639 5.75382C0.591799 5.5471 0.5 5.27853 0.5 5.00006C0.5 4.72159 0.591799 4.45302 0.757639 4.2463C1.80764 2.97503 4.19764 0.5 6.98764 0.5C9.77764 0.5 12.1677 2.97503 13.2177 4.2463Z" stroke="#7C7C7C" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M6.98767 7C8.09224 7 8.98767 6.10457 8.98767 5C8.98767 3.89543 8.09224 3 6.98767 3C5.8831 3 4.98767 3.89543 4.98767 5C4.98767 6.10457 5.8831 7 6.98767 7Z" stroke="#7C7C7C" strokeLinecap="round" strokeLinejoin="round"/>
@@ -54,18 +54,19 @@ function LoginPage() {
               </button>
             </div>
           </div>
-          <div className={styles['LoginPageFormRemember']}>
+          <div className={styles['RegisterPageFormRemember']}>
             <label>
-              <div className={styles['LoginPageFormRememberCheckbox']}>
+              <div className={styles['RegisterPageFormRememberCheckbox']}>
                 <input disabled={false} type="checkbox" name="remember_me" />
-                <div className={styles['LoginPageFormRememberCheckboxIndicator']} />
+                <div className={styles['RegisterPageFormRememberCheckboxIndicator']} />
               </div>
 
-              Remember me
+              <span>
+                I agree to the <Link to="/terms" className={styles['RegisterPageTerms']}>Terms of use</Link> and <Link to="/privacy" className={styles['RegisterPageTerms']}>Privacy Policy</Link>
+              </span>
             </label>
-            <a href="/forgot-password" className={styles['LoginPageForgot']}>Forgot password</a>
           </div>
-          <button type="submit" className={styles['LoginPageSubmit']}>
+          <button type="submit" className={styles['RegisterPageSubmit']}>
             <svg xmlns="http://www.w3.org/2000/svg" width="261" height="48" viewBox="0 0 261 48" fill="none">
               <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="#D9D9D9"/>
               <path d="M260.499 23.2959L226.808 48H0V24.5215L33.4453 0H260.499V23.2959Z" fill="url(#paint0_linear_361_2222)"/>
@@ -92,15 +93,15 @@ function LoginPage() {
 
             <span>CONTINUE</span>
           </button>
-          <p className={styles['LoginPageRegister']}>
-            New to TKT? <Link to="/register">Create account</Link>
+          <p className={styles['RegisterPageRegister']}>
+            Already have an account? <Link to="/login">Login</Link>
           </p>
         </form>
 
-        <img className={styles['LoginPageGamepad']} src="/game-pad.png" />
-        <img className={styles['LoginPageHeadphones']} src="/headphones.png" />
+        <img className={styles['RegisterPageGamepad']} src="/game-pad.png" />
+        <img className={styles['RegisterPageHeadphones']} src="/headphones.png" />
 
-        <svg className={styles['LoginPageTriangle']} width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles['RegisterPageTriangle']} width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.5 66.207V1.20703L65.5 66.207H0.5Z" fill="#F9B640" stroke="black"/>
         </svg>
       </div>
@@ -108,4 +109,4 @@ function LoginPage() {
   )
 }
 
-export default LoginPage
+export default RegisterPage

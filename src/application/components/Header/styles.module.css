@@ -12,6 +12,11 @@
   border-bottom: 1px solid #ffffff33;
 }
 
+.HeaderSticky {
+  position: sticky;
+  top: 0;
+}
+
 .HeaderMain {
   align-items: center;
   display: flex;

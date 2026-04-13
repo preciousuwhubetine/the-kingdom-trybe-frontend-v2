@@ -7,6 +7,8 @@ import Footer from "../application/components/Footer/Footer.jsx"
 
 import HomePage from "../application/views/HomePage/HomePage.jsx"
 import LoginPage from "../application/views/LoginPage/LoginPage.jsx";
+import RegisterPage from "../application/views/RegisterPage/RegisterPage.jsx"
+import PastSermonsPage from "../application/views/PastSermons/PastSermons.jsx"
 
 export default function Config () {
   const location = useLocation();
@@ -21,6 +23,7 @@ export default function Config () {
     <>
       <Header
         hide={location.pathname === '/login' || location.pathname === '/register'}
+        sticky={location.pathname === '/past-sermons'}
       />
 
       <Routes>
@@ -33,6 +36,8 @@ export default function Config () {
           // )
         }
 
+        <Route path="/past-sermons" element={<PastSermonsPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>

@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
 
 function Header({
-  hide = false
+  hide = false,
+  sticky = false
 }) {
   const location = useLocation();
   const header = useRef(null);
@@ -34,7 +35,7 @@ function Header({
   if (hide) return null;
 
   return (
-    <header ref={header} className={`${styles['Header']} ${filled ? styles['HeaderFilled'] : ''}`}>
+    <header ref={header} className={`${styles['Header']} ${filled ? styles['HeaderFilled'] : ''} ${sticky ? styles['HeaderSticky'] : ''}`}>
       <div className="container">
         <div className={styles['HeaderMain']}>
           <Link className={styles['HeaderLogo']} to="/">
