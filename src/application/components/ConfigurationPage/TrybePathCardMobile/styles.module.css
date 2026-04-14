@@ -25,6 +25,7 @@
   margin-top: 48px;
   position: absolute;
   width: 60px;
+  z-index: 2;
 }
 
 .TrybePathCardMobileTop button:disabled {
