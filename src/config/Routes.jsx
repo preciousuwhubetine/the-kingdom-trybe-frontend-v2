@@ -8,7 +8,9 @@ import Footer from "../application/components/Footer/Footer.jsx"
 import HomePage from "../application/views/HomePage/HomePage.jsx"
 import LoginPage from "../application/views/LoginPage/LoginPage.jsx";
 import RegisterPage from "../application/views/RegisterPage/RegisterPage.jsx"
-import PastSermonsPage from "../application/views/PastSermons/PastSermons.jsx"
+import PastSermonsPage from "../application/views/PastSermonsPage/PastSermonsPage.jsx"
+import HandleSelectionPage from "../application/views/HandleSelectionPage/HandleSelectionPage.jsx"
+import ConfigurationPage from "../application/views/ConfigurationPage/ConfigurationPage.jsx"
 
 export default function Config () {
   const location = useLocation();
@@ -22,7 +24,12 @@ export default function Config () {
   return (
     <>
       <Header
-        hide={location.pathname === '/login' || location.pathname === '/register'}
+        hide={
+          location.pathname === '/configure' ||
+          location.pathname === '/handle-selection' ||
+          location.pathname === '/login' ||
+          location.pathname === '/register'
+        }
         sticky={location.pathname === '/past-sermons'}
       />
 
@@ -36,14 +43,21 @@ export default function Config () {
           // )
         }
 
+        <Route path="/configure" element={<ConfigurationPage />} />
+        <Route path="/handle-selection" element={<HandleSelectionPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/past-sermons" element={<PastSermonsPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
 
       <Footer
-        hide={location.pathname === '/login' || location.pathname === '/register'}
+        hide={
+          location.pathname === '/configure' ||
+          location.pathname === '/handle-selection' ||
+          location.pathname === '/login' ||
+          location.pathname === '/register'
+        }
       />
     </>
 

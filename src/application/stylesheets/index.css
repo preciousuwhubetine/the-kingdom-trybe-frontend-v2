@@ -83,3 +83,17 @@ section {
     transform: rotate(360deg);
   }
 }
+
+@keyframes show {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: auto;
+    height: auto;
+    opacity: 1;
+  }
+}

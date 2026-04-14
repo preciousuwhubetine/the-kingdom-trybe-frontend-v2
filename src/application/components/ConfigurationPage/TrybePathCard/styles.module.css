@@ -1,0 +1,110 @@
+.TrybePathCard {
+  cursor: pointer;
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  height: 520px;
+}
+
+.TrybePathCardTop {
+  align-items: flex-end;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.TrybePathCardBg {
+  background: #272727;
+  bottom: 0;
+  height: 200px;
+  position: absolute;
+  user-select: none;
+  width: 100%;
+}
+
+.TrybePathCard img {
+  filter: grayscale(100%);
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: height 0s;
+  width: auto;
+  z-index: 1;
+}
+
+.TrybePathCard.gamer img {
+  height: 340px;
+  object-position: 0 40px;
+}
+
+.TrybePathCard.streamer img {
+  height: 500px;
+  object-position: center 120px;
+}
+
+.TrybePathCard.seeker img {
+  height: 320px;
+  object-position: center 0px;
+}
+
+.TrybePathCard.incognito img {
+  height: 420px;
+  object-position: center 70px;
+}
+
+.TrybePathCardContent {
+  background-color: #272727;
+  padding: 8px;
+}
+
+.TrybePathCardContentMain {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+
+.TrybePathCardContentMain h3 {
+  display: none;
+  font-family: 'Things Digital', sans-serif;
+  font-size: 32px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.TrybePathCardContentMain p {
+  display: none;
+  font-size: 16px;
+  height: 0;
+  line-height: 24px;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.TrybePathCard.Active .TrybePathCardBg {
+  background: linear-gradient(to right, #42E6A4, #7A5CFF);;
+}
+
+.TrybePathCard.Active img {
+  filter: none;
+}
+
+.TrybePathCard.Active .TrybePathCardContentMain h3,
+.TrybePathCard.Active .TrybePathCardContentMain p {
+  animation: 'show' 1s ease forwards;
+  display: block;
+}
+
+.TrybePathCard svg {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}

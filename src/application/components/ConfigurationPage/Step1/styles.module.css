@@ -1,0 +1,123 @@
+.ConfigurationStep1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.ConfigurationStep1Bg {
+  background: linear-gradient(to right, #42e6a4, #7a5cff);
+  border-radius: 50%;
+  filter: blur(40px);
+  height: 300px;
+  left: 50%;
+  position: fixed;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: -1;
+}
+
+.ConfigurationStep1Heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ConfigurationStep1Heading h1 {
+  font-family: 'Things Digital';
+  font-size: 40px;
+  text-align: center;
+}
+
+.ConfigurationStep1Heading p {
+  text-align: center;
+}
+
+.ConfigurationStep1Logo {
+  width: 270px;
+}
+
+.ConfigurationStep1Paths {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 0.4fr;
+  gap: 24px;
+  max-width: 1000px;
+  transition: grid-template-columns 0.3s ease;
+  width: 100%;
+}
+
+.ConfigurationStep1PathsMobile {
+  display: none;
+}
+
+.ConfigurationStep1 form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+
+.ConfigurationStep1 form button[type="submit"] {
+  background: none;
+  border: none;
+  color: white;
+  font-family: 'Things Digital';
+  font-size: 16px;
+  height: 100px;
+  position: relative;
+  width: 300px;
+}
+
+.ConfigurationStep1 form button[type="submit"] svg {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.ConfigurationStep1 form button[type="submit"] span {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .ConfigurationStep1Paths {
+    display: none;
+  }
+
+  .ConfigurationStep1PathsMobile {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 500px;
+  }
+
+  .ConfigurationStep1PathsMobile li {
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ConfigurationStep1Logo {
+    width: 200px;
+  }
+
+  .ConfigurationStep1Heading h1 {
+    font-size: 16px;
+  }
+
+  .ConfigurationStep1Heading p {
+    font-size: 14px;
+  }
+
+  .ConfigurationStep1 form button[type="submit"] {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,130 @@
+.TrybePathCardMobile {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  height: 520px;
+}
+
+.TrybePathCardMobileTop {
+  align-items: flex-end;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.TrybePathCardMobileTop button {
+  align-items: center;
+  align-self: center;
+  background: #F9B640;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-top: 48px;
+  position: absolute;
+  width: 60px;
+}
+
+.TrybePathCardMobileTop button:disabled {
+  background: #555555;
+  cursor: not-allowed;
+}
+
+.TrybePathCardMobileTop button.Left {
+  left: 10px;
+}
+
+.TrybePathCardMobileTop button.Right {
+  right: 10px;
+}
+
+.TrybePathCardMobile img {
+  filter: grayscale(100%);
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: height 0s;
+  width: auto;
+  z-index: 1;
+}
+
+.TrybePathCardMobile.gamer img {
+  height: 340px;
+  object-position: 0 80px;
+}
+
+.TrybePathCardMobile.streamer img {
+  height: 500px;
+  object-position: center 120px;
+}
+
+.TrybePathCardMobile.seeker img {
+  height: 320px;
+  object-position: center 0px;
+}
+
+.TrybePathCardMobile.incognito img {
+  height: 420px;
+  object-position: center 70px;
+}
+
+.TrybePathCardMobileContent {
+  background-color: #272727;
+  padding: 8px;
+}
+
+.TrybePathCardMobileContentMain {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+
+.TrybePathCardMobileContentMain h3 {
+  display: none;
+  font-family: 'Things Digital', sans-serif;
+  font-size: 24px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.TrybePathCardMobileContentMain p {
+  display: none;
+  font-size: 20px;
+  height: 0;
+  line-height: 28px;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.TrybePathCardMobile.Active img {
+  filter: none;
+}
+
+.TrybePathCardMobile.Active .TrybePathCardMobileContentMain h3,
+.TrybePathCardMobile.Active .TrybePathCardMobileContentMain p {
+  animation: 'show' 1s ease forwards;
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .TrybePathCardMobileContentMain h3 {
+    font-size: 18px;
+  }
+
+  .TrybePathCardMobileContentMain p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

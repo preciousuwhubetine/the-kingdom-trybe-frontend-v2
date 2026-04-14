@@ -1,0 +1,94 @@
+.ConfigurationStep2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.ConfigurationStep2Bg {
+  background: linear-gradient(to right, #42e6a4, #7a5cff);
+  border-radius: 50%;
+  filter: blur(40px);
+  height: 300px;
+  left: 50%;
+  position: fixed;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: -1;
+}
+
+.ConfigurationStep2Heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ConfigurationStep2Heading h1 {
+  font-family: 'Things Digital';
+  font-size: 40px;
+  text-align: center;
+}
+
+.ConfigurationStep2Heading p {
+  text-align: center;
+}
+
+.ConfigurationStep2Logo {
+  width: 270px;
+}
+
+.ConfigurationStep2 form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+
+.ConfigurationStep2 form button[type="submit"] {
+  background: none;
+  border: none;
+  color: white;
+  font-family: 'Things Digital';
+  font-size: 16px;
+  height: 100px;
+  position: relative;
+  width: 300px;
+}
+
+.ConfigurationStep2 form button[type="submit"] svg {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.ConfigurationStep2 form button[type="submit"] span {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .ConfigurationStep2Logo {
+    width: 200px;
+  }
+
+  .ConfigurationStep2Heading h1 {
+    font-size: 16px;
+  }
+
+  .ConfigurationStep2Heading p {
+    font-size: 14px;
+  }
+
+  .ConfigurationStep2 form button[type="submit"] {
+    font-size: 14px;
+  }
+}
