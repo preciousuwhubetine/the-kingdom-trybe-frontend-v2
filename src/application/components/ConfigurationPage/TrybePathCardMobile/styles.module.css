@@ -1,7 +1,7 @@
 .TrybePathCardMobile {
   display: grid;
   grid-template-rows: 300px 1fr;
-  height: 520px;
+  height: 480px;
 }
 
 .TrybePathCardMobileTop {
@@ -127,5 +127,10 @@
   .TrybePathCardMobileContentMain p {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .TrybePathCardMobileTop button {
+    height: 40px;
+    width: 40px;
   }
 }
