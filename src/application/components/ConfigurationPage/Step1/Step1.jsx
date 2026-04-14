@@ -15,13 +15,25 @@ function ConfigurationStep1({
 
   useEffect(() => {
     if (selectedPath === 'gamer') {
-      gamerPath.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      gamerPath.current.parentElement.scrollTo({
+        left: gamerPath.current.offsetLeft - gamerPath.current.parentElement.offsetLeft,
+        behavior: 'smooth',
+      });
     } else if (selectedPath === 'streamer') {
-      streamerPath.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      streamerPath.current.parentElement.scrollTo({
+        left: streamerPath.current.offsetLeft - streamerPath.current.parentElement.offsetLeft,
+        behavior: 'smooth',
+      });
     } else if (selectedPath === 'seeker') {
-      seekerPath.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      seekerPath.current.parentElement.scrollTo({
+        left: seekerPath.current.offsetLeft - seekerPath.current.parentElement.offsetLeft,
+        behavior: 'smooth',
+      });
     } else if (selectedPath === 'incognito') {
-      incognitoPath.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      incognitoPath.current.parentElement.scrollTo({
+        left: incognitoPath.current.offsetLeft - incognitoPath.current.parentElement.offsetLeft,
+        behavior: 'smooth',
+      });
     }
   }, [selectedPath]);
 
@@ -40,7 +52,10 @@ function ConfigurationStep1({
 
     const resizeListener = () => {
       if (window.innerWidth < 1000) {
-        selectedPathRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        selectedPathRef.current.parentElement.scrollTo({
+          left: selectedPathRef.current.offsetLeft - selectedPathRef.current.parentElement.offsetLeft,
+          behavior: 'smooth',
+        });
       }
     }
 
